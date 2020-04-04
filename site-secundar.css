@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+
+}
+
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+html, body {
+    font-size: 16px;
+    height: 100%;
+    line-height: 1.5;
+    width: 100%;
+}
+
+main {
+    position: absolute;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#page-header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+#main-nav {
+    color: black;
+    background-color: white;
+    border: none;
+    display: block;
+    float: left;
+    width: 100%;
+    border-bottom:1px solid black;
+}
+
+#main-nav ul li a, #dropdown ul li a{
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background: inherit;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid black;
+    padding: 20px;
+    white-space: nowrap;
+    height: auto;
+    display: inline-block;
+    outline: 0;
+    float: none;
+    width: 144px;
+
+}
+
+#main-nav ul li{
+    list-style: none;
+    display: inline-block;
+    width: 180px;
+}
+
+#dropdown ul li{
+    display: block;
+}
+#main-nav ul li a:hover{
+    background-color: #bfbfbf;
+}
+
+#active {
+    background-color: #000000 !important;
+    color: white!important;
+}
+
+#active:hover {
+    background-color: #373737!important;
+}
+
+#dropdown ul {
+    cursor: auto;
+    color: black;
+    background-color: #737373;
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+#dropdown:hover ul {
+    display: block;
+}
+
+#page-footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+div {
+    display: block;
+}
+
+#page-main {
+    width: 90%;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    display: block;
+}
+
+#main-div {
+    font-size: 32px;
+}
+
+#categorii-veh {
+    position: relative;
+    font-size: 24px;
+    padding-left: 5%;
+
+}
+
+#categorii-veh a img {
+    padding-bottom: 20px;
+
+}
+
+#categorii-veh a {
+    text-decoration: none;
+}
+
+
+.main-poza img{
+    position: relative;
+    width: auto;
+    max-width: 45%;
+    height:auto;
+    max-height: 45%;
+}
+
+.big-text {
+    font-size: 52px;
+}
+
+.photo-car {
+    position: relative;
+    max-width: 100%;
+}
+
+#column-div {
+    font-size: 32px;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule-color: #bfbfbf;
+    column-rule-style: solid;
+    display: table;
+    width: 100%;
+}
+
+.col {
+    display: table-cell;
+}
+
+.column-span {
+    column-span: all;
+}
+
+.col dl dt {
+    font-size: 26px;
+
+}
+
+.col dl dd {
+    font-size: 20px;
+}
+
+sup {
+    font-size: 12px!important;
+    vertical-align: super;
+}
+
+#main-div h1{
+    font-size: 26px;
+    padding-left: 20px;
+}
+
+#main-div h2{
+    font-size: 22px;
+    padding-left: 50px;
+}
+
+#main-div dl dt {
+   font-size: 24px;
+    padding-left: 25px;
+}
+
+#main-div dd {
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+#main-div p {
+    font-size: 24px;
+}
+address {
+    font-size: 22px;
+    padding-left: 50px;
+}
+@media only screen and (orientation: portrait) {
+    #main-nav ul li a, #dropdown ul li a {
+        padding: 5px;
+    }
+}
+
+@media print {
+    #active {
+        background-color: white!important;
+        color: black!important;
+
+    }
+    }
+
+
+
+
+/*
+
+
+#main-body{
+    min-height: 100%;
+    display: block;
+    background-image: url("main-background.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1px black;
+
+}
+
+#main-body-text {
+    color: white;
+    position: absolute;
+    top: 25%;
+    font-size: 52px;
+    left: 5%;
+}
+*/
