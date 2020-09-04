@@ -168,3 +168,16 @@ a {
 
     }
 }
+
+#butonDarkMode{
+    position: absolute;
+    float:right;
+    right: 5%;
+    top: 33%;
+}
+
+.dark-mode {
+    background-color: #1d1d1d!important;
+    color: white!important;
+}
+

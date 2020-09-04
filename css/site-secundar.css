@@ -30,7 +30,7 @@ main {
 .grid-item {
     text-align: center;
     padding: 5px;
-    border: 1px solid black;
+
 }
 
 #grid-container div a img {
@@ -42,14 +42,13 @@ main {
     text-decoration: none;
 }
 
-.item4 {
-    grid-column: 2;
-}
+
 
 .main-poza img{
     position: relative;
     max-width: 100%;
-    height: auto;
+    height: 200px;
+
 }
 
 .big-text {
@@ -119,6 +118,14 @@ address {
     padding-left: 50px;
 }
 
+#stergeToate {
+    float: right;
+}
+
+#recuperare {
+    float:right;
+}
+
 @media only screen and (orientation: portrait) {
     #grid-container {
         grid-column-gap: 2%;
@@ -131,10 +138,29 @@ address {
         grid-template-columns: none;
         padding-bottom: 30%;
     }
-    .item4 {
-        grid-column: unset;
-    }
 }
+
+#adauga {
+   font-size: 1rem;
+}
+
+#formAdauga {
+    display: none;
+}
+
+.sterge {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+}
+
+.sterge:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+
 
 /*
 

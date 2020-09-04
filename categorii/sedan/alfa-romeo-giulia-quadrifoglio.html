@@ -37,6 +37,13 @@
 <main id="page-main">
         <p class="big-text">Alfa Romeo Giulia Quadrifoglio</p>
     <img src="../../img/a-r-g-q.jpg" alt="Alfa Romeo Giulia Quadrifogilio" title="Alfa Romeo Giulia Quadrifoglio" class="photo-car">
+    <p>Unitati de masura:</p>
+    <forms id="unitMasura">
+        <input type="radio" id="metric" name="unitate" value="metric" checked="checked">
+        <label for="metric">metric</label>
+        <input type="radio" id="imperial" name="unitate" value="imperial">
+        <label for="imperial">imperial</label>
+    </forms>
     <div id="column-div">
         <div class="col">
             <p>Informatii generale</p>
@@ -57,19 +64,19 @@
             <p> Motor</p>
             <dl>
                 <dt>Putere</dt>
-                <dd>510 CP @ 6500 rot/min</dd>
+                <dd id="putere">510 CP @ 6500 rot/min</dd>
                 <dt>Cuplu</dt>
-                <dd>600 Nm @ 2500 rot/min</dd>
+                <dd id="cuplu">600 Nm @ 2500 rot/min</dd>
                 <dt>Volumul motorului</dt>
-                <dd>2891 cm<sup>3</sup> (3.0L)</dd>
+                <dd id="cc">2891 cm<sup>3</sup> (2.9L)</dd>
                 <dt>Numarul de cilindri</dt>
                 <dd>6</dd>
                 <dt>Pozitionarea cilindrilor</dt>
                 <dd>in forma de V</dd>
                 <dt>Diametrul cilindrilor</dt>
-                <dd>86.5mm</dd>
+                <dd class="dim">86.5 mm</dd>
                 <dt>Cursa cilindrilor</dt>
-                <dd>82mm</dd>
+                <dd class="dim">82 mm</dd>
                 <dt><a href="../../tt.html#termeni-motor">Turbosuflanta</a> (link)</dt>
                 <dd>Da</dd>
             </dl>
@@ -78,29 +85,23 @@
             <p>Greutate si dimensiune</p>
             <dl>
                 <dt>Masa proprie</dt>
-                <dd>1580 kg</dd>
+                <dd id="greutate">1580 kg</dd>
                 <dt>Lungime</dt>
-                <dd>4639mm</dd>
+                <dd class="dim">4639 mm</dd>
                 <dt>Latime</dt>
-                <dd>1873mm</dd>
+                <dd class="dim">1873 mm</dd>
                 <dt>Inaltime</dt>
-                <dd>1426mm</dd>
+                <dd class="dim">1426 mm</dd>
             </dl>
         </div>
-
     </div>
 </main>
 
-
-
-
-
-
-    <footer id="page-footer">
+<footer id="page-footer">
     <a href="#">Inapoi sus</a>
     <p> © car-spec 2020</p>
 </footer>
 
 </body>
-
+<script src="../../js/conversie.js"></script>
 </html>
