@@ -16,3 +16,17 @@
         <li><a href="/create.ejs">CREATE</a></li>
     </ul>
 </nav>
+<% if(!userId) { %>
+    <div id="login">
+        <form action='/login' id="login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="parola">Parola:</label>
+            <input type="text" id="parola" name="parola">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+<% } else { %>
+    <p>Esti conectat.</p>
+    <a href="/disconnect.ejs">Deconectare</a>
+<% } %>

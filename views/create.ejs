@@ -3,13 +3,19 @@
 <%- include('./fragmente/head.ejs') %>
 <body>
 <header id="page-header">
-    <div id="title-index">
-        <h1>CAR-SPEC</h1>
-    </div>
     <%- include('./fragmente/header.ejs') %>
 </header>
 
 <main id="page-main">
+    <div id="adaugaVehicul">
+        <form action="./create.ejs" method = "POST">
+            <label for="marca">Marca masina:</label>
+            <input type="text" id="marca" name="marca" required><br>
+            <label for="model">Model masina:</label>
+            <input type="text" id="model" name="model" required>
+            <button>Adauga</button>
+        </form>
+    </div><br>
     <p>Autovehicule:</p>
     <div id="grid-container">
         <% if (masini.length > 0) { %>
