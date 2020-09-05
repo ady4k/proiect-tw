@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<%- include('./fragmente/head.ejs') %>
+
+<body>
+<header id="page-header">
+    <%- include('./fragmente/header.ejs') %>
+</header>
+
+<main id="page-main">
+    <div id="main-div">
+        <button id="stergeToate">Sterge toate categoriile</button>
+
+        <div id="adauga">
+        <button id="adaugaCateg">Adauga categorie</button>
+            <form id="formAdauga">
+                <label for="numeCateg">Nume Categorie:</label>
+                <input type="text" id="numeCateg" name="numeCateg" placeholder="exemplu: Break"><br>
+                <button id="terminat" type="submit">Adauga</button>
+            </form>
+        </div>
+        <button id="recuperare">Recupereaza ultima categorie</button>
+
+        <p>Categorii de autovehicule:</p>
+        <div id="grid-container">
+            <div class="grid-item">
+                <a href="sedan.ejs" class="main-poza">
+                    <p>Sedan</p>
+                    <img src="../resurse/img/sedan.jpg" alt="Masina tip sedan" title="Masina de tip sedan">
+                </a><br>
+                <button class="sterge">[x]sterge</button>
+            </div>
+            <div class="grid-item">
+                <a href="hatchback.ejs" class="main-poza">
+                    <p>Hatchback</p>
+                    <img src="../resurse/img/hatchback.jpg" alt="Masina tip hatchback" title="Masina de tip hatchback">
+                </a><br>
+                <button class="sterge">[x]sterge</button>
+            </div>
+            <div class="grid-item">
+                <a href="coupe.ejs" class="main-poza">
+                    <p>Coupe</p>
+                    <img src="../resurse/img/coupe.jpg" alt="Masina tip coupe" title="Masina de tip coupe">
+                </a><br>
+                <button class="sterge">[x]sterge</button>
+            </div>
+            <div class="grid-item">
+                <a href="break.ejs" class="main-poza">
+                    <p>Break</p>
+                    <img src="../resurse/img/break.jpg" alt="Masina tip break" title="Masina de tip break">
+                </a><br>
+                <button class="sterge">[x]sterge</button>
+            </div>
+            <div class="grid-item">
+                <a href="cabriolet.ejs" class="main-poza">
+                    <p>Cabriolet</p>
+                    <img src="../resurse/img/cabriolet.jpeg" alt="Masina tip cabrio" title="Masina de tip cabriolet">
+                </a><br>
+                <button class="sterge">[x]sterge</button>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer id="page-footer">
+    <%- include('./fragmente/footer.ejs') %>
+</footer>
+
+</body>
+<script src="../resurse/js/categorii.js"></script>
+</html>

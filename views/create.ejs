@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ro">
+<%- include('./fragmente/head.ejs') %>
+<body>
+<header id="page-header">
+    <div id="title-index">
+        <h1>CAR-SPEC</h1>
+    </div>
+    <%- include('./fragmente/header.ejs') %>
+</header>
+
+<main id="page-main">
+    <p>Autovehicule:</p>
+    <div id="grid-container">
+        <% if (masini.length > 0) { %>
+          <% masini.forEach(masina => { %>
+            <div class="grid-item">
+                    <p><%= masina.marca %></p>
+                    <p><%= masina.model %></p>
+
+                <button class="sterge">[x]sterge</button>
+            </div>
+        <% }) %>
+       <% } else { %>
+         <p>Nu exista nici o masina inregistrata.</p>
+        <% } %>
+    </div>
+</main>
+
+<footer id="page-footer">
+    <%- include('./fragmente/footer.ejs') %>
+</footer>
+</body>
+</html>

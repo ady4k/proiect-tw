@@ -1,40 +1,13 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Visla Adrian">
-    <meta name="description" content="Lista cu termeni tehnici folositi in domeniu">
-    <meta name="keywords" content="Termeni, Mecanica, Sisteme">
-    <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/site-secundar.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <title>Car Spec - Termeni Tehnici</title>
-
-</head>
+<%- include('./fragmente/head.ejs') %>
 
 <body>
 <header id="page-header">
     <div>
         <button id="butonDarkMode">Dark Mode</button>
     </div>
-    <nav id="main-nav">
-        <ul>
-            <li><a href="index.html">ACASA</a></li>
-            <li id="dropdown"><a href="categorii.html">CATEGORII</a>
-                <ul>
-                    <li><a href="categorii/sedan.html">SEDAN</a></li>
-                    <li><a href="categorii/hatchback.html">HATCHBACK</a></li>
-                    <li><a href="categorii/coupe.html">COUPE</a></li>
-                    <li><a href="categorii/break.html">BREAK</a></li>
-                    <li><a href="categorii/cabriolet.html">CABRIOLET</a></li>
-                </ul>
-            </li>
-            <li><a href="tt.html" id="active">TERMENI TEHNICI</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
+    <%- include('./fragmente/header.ejs') %>
 </header>
 
 <main id="page-main">
@@ -72,10 +45,9 @@
 </main>
 
 <footer id="page-footer">
-    <a href="#">Inapoi sus</a>
-    <p> © car-spec 2020</p>
+    <%- include('./fragmente/footer.ejs') %>
 </footer>
 
 </body>
-<script src="../js/tt.js"></script>
+<script src="../resurse/js/tt.js"></script>
 </html>
