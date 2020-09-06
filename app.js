@@ -16,7 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-
 // ------------ LOGIN / LOGOUT - SESIUNI ------------ //
 const numeSesiune = 'xyz';
 
@@ -38,8 +37,6 @@ const users = [
     { id : 3, username: 'test', parola: 'test123'}
 ]
 
-
-
 app.post('/login', (req, res) => {
     const { username, parola } = req.body;
     if (username && parola) {
@@ -54,6 +51,7 @@ app.post('/login', (req, res) => {
     }
     res.redirect('/index.ejs')
 })
+
 app.get('/disconnect.ejs', (req, res) => {
     req.session.destroy(err => {
         if (err) {
@@ -114,7 +112,6 @@ app.get('/alfa-romeo-giulia-quadrifoglio.ejs', (req, res) => {
 // CREATE FORMULAR
 
 app.post('/create.ejs', (req, res) => {
-
     masini.push(req.body);
     res.redirect('/create.ejs');
 })
