@@ -38,9 +38,7 @@ const users = [
     { id : 3, username: 'test', parola: 'test123'}
 ]
 
-app.use(body.urlencoded({
-    extended: true
-}))
+
 
 app.post('/login', (req, res) => {
     const { username, parola } = req.body;
